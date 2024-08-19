@@ -17,6 +17,18 @@ interface SupplierBody {
 
 export class SupplierService {
 
+	findMany(): Observable<Supplier[]> {
+		const jwt = localStorage.getItem("jwt") ?? "";
+
+		return defer(() => {
+			return axiosClientSecuredJsonContent(jwt).get<Supplier[]>(`/supplier/many`)
+		}).pipe(
+			map(response => {
+				return response.data
+			})
+		)
+	}
+
 	searchPaginate(term: string, page: number): Observable<SupplierPaginate> {
 
 		const jwt = localStorage.getItem("jwt") ?? "";

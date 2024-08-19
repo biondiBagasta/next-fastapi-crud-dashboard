@@ -1,6 +1,6 @@
 "use client"
 
-import { ProductOutlined, MoreOutlined, WindowsOutlined, TruckOutlined } from "@ant-design/icons";
+import { ProductOutlined, MoreOutlined, WindowsOutlined, TruckOutlined, RollbackOutlined } from "@ant-design/icons";
 import SidebarMenuItemComponent from "./sidebar-menu-item.component";
 
 interface SidebarProps {
@@ -20,6 +20,7 @@ export default function SidebarComponent(props: SidebarProps) {
         <SidebarMenuItemComponent icon={ <MoreOutlined /> } name="Category" redirectRoute="category" />
         <SidebarMenuItemComponent icon={ <ProductOutlined /> } name="Product" redirectRoute="product" />
         <SidebarMenuItemComponent icon={ <TruckOutlined /> } name="Supplier" redirectRoute="supplier" />
+        <SidebarMenuItemComponent icon={ <RollbackOutlined /> } name="Restock" redirectRoute="restock" />
       </ul>
     </div>
   );

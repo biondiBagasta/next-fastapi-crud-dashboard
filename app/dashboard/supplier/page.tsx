@@ -12,7 +12,7 @@ import { Supplier } from "@/app/interfaces/supplier";
 
 const { Search } = Input;
 
-export default function CategoryPage() {
+export default function SupplierPage() {
 	const [nameControl, setNameControl] = useState("");
 	const [addressControl, setAddressControl] = useState("");
 	const [phoneNumberControl, setPhoneNumberControl] = useState("");
@@ -196,7 +196,7 @@ export default function CategoryPage() {
 		<>
 			{ contextHolder }
 
-			<Modal title="Add Category" width={ 800 } 
+			<Modal title="Add Supplier" width={ 800 } 
 			okButtonProps={
 				{
 					icon: <SaveOutlined />,
@@ -241,7 +241,7 @@ export default function CategoryPage() {
 				</div>
 			</Modal>
 
-			<Modal title="Edit Category" width={ 800 } 
+			<Modal title="Edit Supplier" width={ 800 } 
 			okButtonProps={
 				{
 					icon: <SaveOutlined />,
@@ -350,8 +350,8 @@ export default function CategoryPage() {
 		                                                color: infoColor
 		                                            }
 	                                            } />} />
-	                                            <Popconfirm title="Delete Category" description={
-	                                            `Are you sure want to delete this ${d.name} Category data???`
+	                                            <Popconfirm title="Delete Supplier" description={
+	                                            `Are you sure want to delete this ${d.name} Supplier data???`
 	                                            } 
 	                                            okText="Delete" 
 	                                            cancelText="Cancel"

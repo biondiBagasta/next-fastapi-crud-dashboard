@@ -656,8 +656,8 @@ export default function ProductPage() {
 		                                                color: infoColor
 		                                            }
 	                                            } />} />
-	                                            <Popconfirm title="Delete Category" description={
-	                                            `Are you sure want to delete this ${d.name} Category data???`
+	                                            <Popconfirm title="Delete Product" description={
+	                                            `Are you sure want to delete this ${d.name} Product data???`
 	                                            } 
 	                                            okText="Delete" 
 	                                            cancelText="Cancel"
